@@ -6,10 +6,10 @@ class Program
     static void Main(string[] args)
     {
         //Core Requirement #1
-        Console.WriteLine("What is the magic number? ");
+        Console.Write("What is the magic number? ");
         String magicNumber = Console.ReadLine();
         int number = int.Parse(magicNumber);
-        Console.WriteLine("What is your guess? ");
+        Console.Write("What is your guess? ");
         string gnumber = Console.ReadLine();
         int guessNumber = int.Parse(gnumber);
         if (number > guessNumber){
