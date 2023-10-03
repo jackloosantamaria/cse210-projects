@@ -4,7 +4,7 @@ public class Entry{
     public string _dateTime;
     public string _userPrompt;
     public string _userEntry;
-    
+
 
     public Entry(){
 
@@ -13,5 +13,6 @@ public class Entry{
     public void Display(){
         Console.WriteLine($"Date: {_dateTime} - Prompt: {_userPrompt}");
         Console.WriteLine($"{_userEntry}");
+        
     }
 }
