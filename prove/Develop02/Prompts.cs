@@ -7,7 +7,7 @@ public class Prompts{
         "If I had one thing I could do over today, what would it be? "
     };
 
-    public List<string> _Prompts = new List<string>(_options);
+    public List<string> _prompts = new List<string>(_options);
 
     public Prompts(){
 
@@ -16,8 +16,8 @@ public class Prompts{
     public string ShowPrompt(){
 
         var random = new Random();
-        int number = random.Next(_Prompts.Count);
-        string Prompts = _Prompts[number];
+        int number = random.Next(_prompts.Count);
+        string Prompts = _prompts[number];
         return Prompts;
     }
 
