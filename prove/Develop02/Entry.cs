@@ -4,14 +4,14 @@ public class Entry{
     public string _dateTime;
     public string _userPrompt;
     public string _userEntry;
-    public string _userFile;
+    
 
     public Entry(){
 
     }
 
     public void Display(){
-        Console.Write($"Date: {_dateTime} - Prompt: {_userPrompt}");
-        Console.Write($"{_userEntry}");
+        Console.WriteLine($"Date: {_dateTime} - Prompt: {_userPrompt}");
+        Console.WriteLine($"{_userEntry}");
     }
 }
