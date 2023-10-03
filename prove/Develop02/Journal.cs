@@ -56,7 +56,7 @@ public class Journal{
     }
 
     public void LoadTextFile(){
-        Console.Write("Please provide file name: ");
+        Console.WriteLine("Please provide file name: ");
         string _fileEntry = Console.ReadLine();
 
         if (File.Exists(_fileEntry)){
