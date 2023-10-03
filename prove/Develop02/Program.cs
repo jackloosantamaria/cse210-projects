@@ -33,11 +33,14 @@ class Program
 
                 case 4:
                     j.NewTextFile();
+                    j.NewFileJSON();
                 break;
 
                 case 5:
                     Console.Write("Bye!");
                 break;
+
+            
 
                 default:
                     Console.Write("Not a valid option");
@@ -72,6 +75,10 @@ class Program
         num = int.Parse(answer);
         return num;
     }
+
+   
+    
+    
 
 
 }
