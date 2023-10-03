@@ -58,15 +58,15 @@ class Program
 
     static int options(){
 
-        string options = @"Welcome to the Journal Program!
+        string options = @" Welcome to the Journal Program!
         Please select one of the following choices:
         1. Write
         2. Display
         3. Load
         4. Save
         5. Quit
-        What would you like to do?";
-        Console.Write(options);
+        What would you like to do? ";
+        Console.WriteLine(options);
         string answer = Console.ReadLine();
         int num;
         num = int.Parse(answer);
