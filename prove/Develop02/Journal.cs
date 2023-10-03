@@ -1,5 +1,8 @@
 using System.Text;
 using System.IO;
+using System.Runtime.Serialization.Json;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 public class Journal{
 
@@ -8,6 +11,7 @@ public class Journal{
     private string _fileEntry;
 
     public Journal(){}
+
 
     public void Display(){
 
@@ -21,7 +25,7 @@ public class Journal{
 
     public void NewTextFile(){
 
-        Console.Write("Please provide file name: ");
+        Console.Write("Please provide TXT file name: ");
         _fileEntry = Console.ReadLine();
 
         if (!File.Exists(_fileEntry)){
@@ -29,6 +33,7 @@ public class Journal{
             File.Create(_fileEntry);
             Console.Write("File created");
             SaveTextFile(_fileEntry);
+            
 
         }
 
@@ -73,6 +78,22 @@ public class Journal{
                 _textFile.Add(entry);
             }
         }
+    }
+
+    public void NewFileJSON(){
+        Console.WriteLine("\nPlease provide JSON File: ");
+        string newDocument = Console.ReadLine();
+        List<JsonData> _document = new List<JsonData>();
+        foreach (Entry entry in _textFile){
+            _document.Add(new JsonData(){ 
+            Time = entry._dateTime,
+            Prompt = entry._userPrompt,
+            Answer = entry._userEntry
+        });
+        }
+
+        string newJson = JsonSerializer.Serialize(_document);
+        File.WriteAllText(newDocument, newJson);
     }
 
 
