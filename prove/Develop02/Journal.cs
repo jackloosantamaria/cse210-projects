@@ -8,7 +8,7 @@ public class Journal{
 
     public List<Entry> _textFile = new List<Entry>();
 
-    private string _fileEntry;
+    public string _fileEntry;
 
     public Journal(){}
 
