@@ -4,3 +4,4 @@
 ; lunes, 2 de octubre de 2023 6:04 p. m.; Who was the most interesting person I interacted with today?; John Doe
 ; martes, 3 de octubre de 2023 1:27 p. m.; What was the best part of my day? ; eating lunch
 ; martes, 3 de octubre de 2023 1:33 p. m.; What was the strongest emotion I felt today? ; happy when I finish my homework
+; martes, 3 de octubre de 2023 1:50 p. m.; If I had one thing I could do over today, what would it be? ; reading
