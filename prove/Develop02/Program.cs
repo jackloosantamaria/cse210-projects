@@ -3,13 +3,13 @@ using System;
 class Program
 {
     static void Main(string[] args){
-    int[] numbers = {1,2,3,4,5};
-    int num = 0;
+    //int[] numbers = {1,2,3,4,5};
+    int _num = 0;
     Journal j = new Journal();
     Prompts p = new Prompts();
-        while(num != 5) {
-            num = options();
-            switch (num){
+        while(_num != 5) {
+            _num = Options();
+            switch (_num){
                 case 1:
                     string timeInfo = ShowDateTime();
                     string prompt = p.ShowPrompt();
@@ -51,12 +51,12 @@ class Program
     }
 
     static string ShowDateTime(){
-        DateTime currentTime = DateTime.Now;
-        string time = currentTime.ToString("f");
+        DateTime _currentTime = DateTime.Now;
+        string time = _currentTime.ToString("f");
         return time;
     }
 
-    static int options(){
+    static int Options(){
 
         string options = @" Welcome to the Journal Program!
         Please select one of the following choices:
