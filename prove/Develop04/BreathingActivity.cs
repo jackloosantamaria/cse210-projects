@@ -15,6 +15,7 @@ public class BreathingActivity : Activity{
     }
 
     public void Breath(int time){
+        Console.WriteLine("");
         int timer = 0;
         while (timer < time){
             for (int i = 3; i > 0; i--){
