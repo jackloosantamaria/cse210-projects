@@ -61,10 +61,7 @@ public class Activity{
         }
      
         }
-        
     
-
-
     public void DisplayCounter(int time){
         for (int i = time; i > 0; i--){
             Console.Write($"{_text} {i}");
