@@ -60,6 +60,8 @@ public class ListingActivity : Activity {
             _userPrompt.Add(Console.ReadLine());
         }
         clock.Stop();
+        int answerLength = _userPrompt.Count;
+        Console.WriteLine($"You have listed {answerLength} items");
 
     }
 
