@@ -1,0 +1,3 @@
+1300
+SimpleGoal:,test1,i'm testing this class,100,True
+ChecklistGoal:,test3,i'm testing this new class #3,150,300,3,3
