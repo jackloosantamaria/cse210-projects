@@ -15,13 +15,13 @@ public class Goal{
     }
 
     public void GoalQuestions(){
-        DisplayAnimation();
+        //DisplayAnimation();
         Console.WriteLine("What is the name of your goal? ");
         _name = Console.ReadLine();
-        DisplayAnimation();
+       // DisplayAnimation();
         Console.WriteLine("What is a short description of it? ");
         _detail = Console.ReadLine();
-        DisplayAnimation();
+       // DisplayAnimation();
         Console.WriteLine("What is the amount of points associated with this goal? ");
         _point = int.Parse(Console.ReadLine());
 
@@ -47,23 +47,23 @@ public class Goal{
         return 0;
      }
 
-     public void DisplayAnimation(){
+    //  public void DisplayAnimation(){
      
 
-        for (int i=0; i<20; i++){
-            List<string>animationString = new List<string>();
-            animationString.Add("|");
-            animationString.Add("/");
-            animationString.Add("-");
-            animationString.Add("\\");
-            foreach (string s in animationString){
-                Console.Write(s);
-                Thread.Sleep(100);
-                Console.Write('\b');
+    //     for (int i=0; i<20; i++){
+    //         List<string>animationString = new List<string>();
+    //         animationString.Add("|");
+    //         animationString.Add("/");
+    //         animationString.Add("-");
+    //         animationString.Add("\\");
+    //         foreach (string s in animationString){
+    //             Console.Write(s);
+    //             Thread.Sleep(100);
+    //             Console.Write('\b');
             
             
-            }
-        }
+    //         }
+    //     }
      
-        }
+    //     }
 }
