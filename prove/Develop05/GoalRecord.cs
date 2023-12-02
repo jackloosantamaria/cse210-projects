@@ -12,7 +12,7 @@ public class GoalRecord{
     }
 
     public void SaveGoals(){
-        DisplayAnimationReady();
+        //DisplayAnimationReady();
         Console.Write("What is the filename for the goal file?: ");
         string textName = Console.ReadLine();
         using (StreamWriter text = new StreamWriter(textName)){
@@ -53,7 +53,7 @@ public class GoalRecord{
     }
 
     public void ListGoals(){
-        DisplayAnimationReady();
+        //DisplayAnimationReady();
         Console.WriteLine("The goals are: ");
         for (int i = 0; i<_achievement.Count(); i++){
             Console.WriteLine($"{i+1}.");
@@ -89,47 +89,47 @@ public class GoalRecord{
             _total += pointCompleted;
             Console.Write($"Awesome! You have earned {pointCompleted.ToString()} points.");
             Console.Write($"You now have {_total} points.");
-            DisplayFinalMessage();
+            //DisplayFinalMessage();
         }
         else {
             Console.WriteLine("You have already completed this goal.");
-            DisplayFinalMessage();
+           // DisplayFinalMessage();
         }
     }
 
-        public void DisplayFinalMessage(){
+    //     public void DisplayFinalMessage(){
        
-            Console.Write(" Good Job! ");
-            for (int i=0; i<50; i++){
-                List<string>animationString = new List<string>();
-                animationString.Add("|");
-                animationString.Add("/");
-                animationString.Add("-");
-                animationString.Add("\\");
-                foreach (string s in animationString){
-                    Console.Write(s);
-                    Thread.Sleep(75);
-                    Console.Write('\b');          
-            }
+    //         Console.Write(" Good Job! ");
+    //         for (int i=0; i<50; i++){
+    //             List<string>animationString = new List<string>();
+    //             animationString.Add("|");
+    //             animationString.Add("/");
+    //             animationString.Add("-");
+    //             animationString.Add("\\");
+    //             foreach (string s in animationString){
+    //                 Console.Write(s);
+    //                 Thread.Sleep(75);
+    //                 Console.Write('\b');          
+    //         }
         
-        }
-    }
+    //     }
+    // }
 
-    public void DisplayAnimationReady(){
+    // public void DisplayAnimationReady(){
       
-         Console.Write("Get Ready! ");
-            for (int i=0; i<20; i++){
-                List<string>animationString = new List<string>();
-                animationString.Add("|");
-                animationString.Add("/");
-                animationString.Add("-");
-                animationString.Add("\\");
-                foreach (string s in animationString){
-                    Console.Write(s);
-                    Thread.Sleep(100);
-                    Console.Write('\b');  
-                } 
-            }
-    }
+    //      Console.Write("Get Ready! ");
+    //         for (int i=0; i<20; i++){
+    //             List<string>animationString = new List<string>();
+    //             animationString.Add("|");
+    //             animationString.Add("/");
+    //             animationString.Add("-");
+    //             animationString.Add("\\");
+    //             foreach (string s in animationString){
+    //                 Console.Write(s);
+    //                 Thread.Sleep(100);
+    //                 Console.Write('\b');  
+    //             } 
+    //         }
+    // }
 
 }
