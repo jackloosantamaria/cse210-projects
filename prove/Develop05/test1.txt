@@ -1,3 +1,2 @@
-1300
-SimpleGoal:,test1,i'm testing this class,100,True
-ChecklistGoal:,test3,i'm testing this new class #3,150,300,3,3
+0
+ChecklistGoal:,test2,eating 3 times,300,600,3,0
