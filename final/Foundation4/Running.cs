@@ -14,7 +14,8 @@ public class Running : Exercise{
     public override double Speed()
     {
         double velocity = _distance/_time * 60;
-        return velocity;
+        double velocity2 = Math.Round(velocity,2);
+        return velocity2;
     }
 
     public override double Pace()
