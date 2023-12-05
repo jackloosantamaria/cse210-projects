@@ -16,7 +16,7 @@ public class Event{
     public string CreateEvent(){
         string show = "Title: " + _name + "\n";
         show += "Description: " + _detail + "\n";
-        show += _date + " > " + _time + "\n";
+        show += "Date: " + _date + " " + _time + "\n";
 
         string address =  _address.CreateAddress();
         show += address + "\n";
