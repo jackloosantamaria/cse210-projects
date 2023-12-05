@@ -17,7 +17,8 @@ public class Swimming:Exercise{
     public override double Speed()
     {
         double speed = Distance() / _time * 60;
-        return speed;
+        double speed2 = Math.Round(speed,2);
+        return speed2;
     }
 
     public override double Pace()
