@@ -7,22 +7,11 @@ public class Lecture:Event{
         _capacity = capacity;
     }
 
-    private string GetLecturer(){
-        return _lecturer;
-    }
-
-    public int GetCapacity(){
-        return _capacity;
-    }
-
-    // public string EventType(){
-    //     return "Lecture";
-    // }
 
     public string LectureDetail(){
         string word = CreateEvent();
         word += "Speaker: " + _lecturer;
-        word += "Capacity: " + _capacity + " max.";
+        word += "\nCapacity: " + _capacity + " max.";
         return word;
     }
 
