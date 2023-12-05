@@ -17,7 +17,7 @@ public abstract class Exercise{
     public abstract double Pace();
 
     public string GetSummary(){
-        return $"{_date} {_name} ({_time} min) - Distance {Distance()} km, Speed: {Pace()} km/min";
+        return $"{_date} {_name} ({_time} min) - Distance {Distance()} km, Speed: {Speed()} kph, Pace: {Pace()} min per km";
         //return word;
     }
 }
