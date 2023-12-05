@@ -15,9 +15,9 @@ public class Lecture:Event{
         return _capacity;
     }
 
-    public string EventType(){
-        return "Lecture";
-    }
+    // public string EventType(){
+    //     return "Lecture";
+    // }
 
     public string LectureDetail(){
         string word = CreateEvent();
@@ -28,7 +28,7 @@ public class Lecture:Event{
 
     public string CreateEventLecture(){
         string lectureEvent = "";
-        string type = EventType();
+        string type = "Lecture";
         lectureEvent += "Event Type: " + type;
         lectureEvent += CreateShortEvent();
         return lectureEvent;
