@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-public class Exercise{
+public abstract class Exercise{
     protected string _date;
     protected int _time;
     protected string _name;
@@ -10,20 +10,14 @@ public class Exercise{
         _time = time;
     }
 
-    public virtual double Distance(){
-        return 0;
-    }
+     public abstract double Distance();
 
-    public virtual double Speed(){
-        return 0;
-    }
+    public abstract double Speed();
 
-    public virtual double Pace(){
-        return 0;
-    }
+    public abstract double Pace();
 
     public string GetSummary(){
-        string word = $"{_date} {_name} ({_time} min) - Distance {Distance()} km, Speed: {Pace()} km/min";
-        return word;
+        return $"{_date} {_name} ({_time} min) - Distance {Distance()} km, Speed: {Pace()} km/min";
+        //return word;
     }
 }
